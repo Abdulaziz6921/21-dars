@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-HW</title>
+    <link rel="stylesheet" href="tesla.css">
+    <style>
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc (100vh - 70px);
+            background:rgb(47, 119, 153);
+        }
+        .loginform{
+            width: 500px;
+            height: 570px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            color: rgb(128, 123, 123);
+        }
+        .title{
+            font-size: 36px;
+            font-family: sans-serif;
+            font-weight: 200;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 20px;
+
+        }
+        .logininput{
+            width: 80%;
+            height: 70px;
+            font-size: 18px;
+            margin-left: 10%;
+            border: 1px solid rgb(226, 223, 223);
+            outline: none;
+            text-indent: 20px;
+           
+        }
+        label{
+            font-family: sans-serif;
+            color: black;
+            margin-left: 10%;
+        }
+        .visibility{
+            margin-left: 10%;
+            margin-top: 10px;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: rgb(2, 2, 2);
+        }
+        .loginbtn{
+            width: 82%;
+            height: 70px;
+            background:rgb(47, 119, 153);
+            margin-left: 10%;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            margin-top: 20px;
+
+        }
+
+        .signuptext{
+            color: gray;
+            margin-top: 35px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .loginform a{
+            text-decoration: none;
+            color: rgb(78, 150, 184);
+        }
+        nav a{
+            color: #fff;
+        }
+        nav>ul>li>a:hover, nav>h1>a:hover, .nav_right>li>a:hover{
+            background-color: rgb(47, 119, 153);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <nav style="background-color:rgb(47, 119, 153);">
+        
+            <h1><a href="./Tesla.html">Tesla</a></h1>
+
+        <ul>
+            <li><a href="./Model S.html">Model S</a></li>
+            <li><a href="./Model 3.html">Model 3</a></li>
+            <li><a href="./Model X.html">Model X</a></li>
+            <li><a href="./Model Y.html">Model Y</a></li>
+            <li><a href="./Solar roof.html">Solar Roof</a></li>
+            <li><a href="./Solar panels.html">Solar Panels</a></li>
+        </ul>
+
+        <div class="nav_right">
+            <li><a href="">Shop</a></li>
+            <li><a href="./Account.html">Account</a></li>
+            <li><a href="">Menu</a></li>
+        </div>
+    </nav>
+    <main>
+        <div class="loginform">
+            <h1 class="title">Login</h1>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Email address" class="logininput" style=" margin-bottom: 30px;">
+            <label for="email">Password:</label>
+            <input type="password" name="password" placeholder="Password" class="logininput">
+            <p class="visibility"><input type="checkbox"> Show password</p>
+            <button class="loginbtn">SIGN IN</button>
+            <p class="signuptext">Forgot <a href="">Username / Password</a>?</p>
+            <p class="signuptext" style="margin-top: 12px;">Don't have an account? <a href="">Sign up</a>?</p>
+        </div>
+    </main>
+</body>
+</html>
